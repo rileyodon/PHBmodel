@@ -44,10 +44,10 @@ The state variables modelled listed in the following table:
 
 The process state is modelled according to:
 
-<img src="https://latex.codecogs.com/svg.latex?&space;\frac{dS_s}{dt}=\frac{q_{in}}{V}(S_{s_{in}}-S_s)-2r_x-1.67r_p" />
-<img src="https://latex.codecogs.com/svg.latex?&space;\frac{dS_{NH}}{dt}=\frac{q_{in}}{V}(S_{NH_{in}}-S_{NH})-0.15r_x" />
-<img src="https://latex.codecogs.com/svg.latex?&space;\frac{dX_{B}}{dt}=\frac{q_{in}}{V}(X_{B_{in}}-X_B)+r_x" />
-<img src="https://latex.codecogs.com/svg.latex?&space;\frac{dX_{PHB}}{dt}=\frac{q_{in}}{V}(X_{PHB_{in}}-X_{PHB})+r_p" />
+<img src="https://latex.codecogs.com/svg.latex?\frac{dS_s}{dt}=\frac{q_{in}}{V}(S_{s_{in}}-S_s)-2r_x-1.67r_p" />
+<img src="https://latex.codecogs.com/svg.latex?\frac{dS_{NH}}{dt}=\frac{q_{in}}{V}(S_{NH_{in}}-S_{NH})-0.15r_x" />
+<img src="https://latex.codecogs.com/svg.latex?\frac{dX_{B}}{dt}=\frac{q_{in}}{V}(X_{B_{in}}-X_B)+r_x" />
+<img src="https://latex.codecogs.com/svg.latex?\frac{dX_{PHB}}{dt}=\frac{q_{in}}{V}(X_{PHB_{in}}-X_{PHB})+r_p" />
 
 where r<sub>x</sub> is the rate of biomass production and r<sub>p</sub> is the rate of PHB production. The volume in the reactor is modelled by:
 
@@ -55,8 +55,8 @@ where r<sub>x</sub> is the rate of biomass production and r<sub>p</sub> is the r
 
 where q is the flow rate in L/d. The reaction rates r<sub>x</sub> and r<sub>p</sub> are calculated as follows:
 
-<img src="https://latex.codecogs.com/svg.latex?&space;r_x=\mu_{max,g}X_B\frac{S_s}{K_{S,s,g}+S_s}\cdot\frac{S_{NH}}{K_{S,NH,g}+S_{NH}}" />
-<img src="https://latex.codecogs.com/svg.latex?&space;r_x=\mu_{max,p}X_B\frac{S_s}{K_{S,s,g}+S_s}\cdot\frac{K_{I,NH,p}}{K_{I,NH,p}+S_{NH}}\cdot\frac{PHA_{max}}{PHA_{max}+X_{PHA}/(X_{PHA}+X_B)}\cdot\frac{K_{I,S}}{K_{I,S}+S_s}" />
+<img src="https://latex.codecogs.com/svg.latex?r_x=\mu_{max,g}X_B\frac{S_s}{K_{S,s,g}+S_s}\cdot\frac{S_{NH}}{K_{SNHg}+S_{NH}}" />
+<img src="https://latex.codecogs.com/svg.latex?r_p=\mu_{max,p}X_B\frac{S_s}{K_{S,s,g}+S_s}\cdot\frac{K_{I,NH,p}}{K_{I,NH,p}+S_{NH}}\cdot\frac{PHA_{max}}{PHA_{max}+X_{PHA}/(X_{PHA}+X_B)}\cdot\frac{K_{I,S}}{K_{I,S}+S_s}" />
 
 The kinetic parameters applied in the model are representative of the microbial strain H. mediterranei and listed in the table below.
 
